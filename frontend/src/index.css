@@ -1,0 +1,111 @@
+/* Global Styles - Remove white bars and gradient */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background: #0a0a0f !important;
+  overflow-x: hidden;
+}
+
+body {
+  background: #0a0a0f !important;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+body[data-color-mode='light'],
+body[data-color-mode='light'] #root {
+  background: #f4f7fb !important;
+  color: #111827;
+}
+
+body[data-color-mode='light'] .MuiPaper-root,
+body[data-color-mode='light'] .MuiTableContainer-root,
+body[data-color-mode='light'] .MuiDialog-paper {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(15, 23, 42, 0.12) !important;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08) !important;
+}
+
+body[data-color-mode='light'] .MuiTypography-root,
+body[data-color-mode='light'] .MuiTableCell-root,
+body[data-color-mode='light'] .MuiListItemText-primary,
+body[data-color-mode='light'] .MuiInputBase-input,
+body[data-color-mode='light'] .MuiDialogTitle-root {
+  color: #111827 !important;
+}
+
+body[data-color-mode='light'] .MuiListItemText-secondary,
+body[data-color-mode='light'] .MuiInputLabel-root,
+body[data-color-mode='light'] .MuiTableCell-head,
+body[data-color-mode='light'] .MuiButton-text {
+  color: #64748b !important;
+}
+
+body[data-color-mode='light'] .MuiTableRow-root {
+  border-color: rgba(15, 23, 42, 0.1) !important;
+}
+
+body[data-color-mode='light'] .MuiTableRow-root:hover,
+body[data-color-mode='light'] .MuiBox-root:hover {
+  background-color: rgba(15, 23, 42, 0.04);
+}
+
+body[data-color-mode='light'] ::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+
+body[data-color-mode='light'] ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+/* Remove scrollbar white bars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #333 #1a1a2e;
+}
+
+/* Remove default white margins */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fix any white flashes */
+::selection {
+  background: rgba(0, 212, 255, 0.3);
+  color: #fff;
+}
